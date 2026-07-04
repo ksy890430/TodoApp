@@ -1,0 +1,129 @@
+.app {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 48px 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.add-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.add-form input {
+  flex: 1;
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.add-form button {
+  font: inherit;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.todo-list li.empty {
+  justify-content: center;
+  color: var(--text);
+  border-bottom: none;
+  padding: 24px 4px;
+}
+
+.todo-list .text {
+  flex: 1;
+  text-align: left;
+  cursor: text;
+  word-break: break-word;
+}
+
+.todo-list li.completed .text {
+  text-decoration: line-through;
+  color: var(--text);
+}
+
+.todo-list .edit-input {
+  flex: 1;
+  font: inherit;
+  padding: 4px 6px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.todo-list .delete {
+  border: none;
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 4px;
+}
+
+.todo-list .delete:hover {
+  color: var(--text-h);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.filters {
+  display: flex;
+  gap: 4px;
+}
+
+.filters button,
+.footer .clear {
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid transparent;
+  background: none;
+  color: var(--text);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filters button.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.footer .clear:hover {
+  color: var(--text-h);
+}
